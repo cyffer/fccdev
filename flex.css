@@ -18,13 +18,16 @@
 .box7 { background:pink; }
 .box8 { background:brown; }
 .box9 { background:violet; }
-.box10{ background:#2750bc; }
 
-.container {
+.grid-tainer {
 	display: flex;
 	border:10px solid mistyrose;
 	align-items: center;
-	height: 100vh;
-	flex-direction: row;
+	height: 100%;
+	flex-wrap: wrap;
 }
 
+.box {
+	width: calc(50% - 25%);
+	margin: 10px;
+}
